@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leer Datos de Excel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sube tu archivo Excel</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx" required>
+        <button type="submit">Seleccionar Elemento</button>
+    </form>
+    
+    {% if data %}
+        <h2>Primeras filas de los datos</h2>
+        <div>{{ data|safe }}</div>
+    {% endif %}
+
+    {% if summary %}
+        <h2>Resumen Estadístico</h2>
+        <div>{{ summary|safe }}</div>
+    {% endif %}
+
+    {% if graph_url %}
+        <h2>Gráfica de Ventas</h2>
+        <img src="{{ graph_url }}" alt="Gráfica de Ventas">
+    {% endif %}
+</body>
+</html>

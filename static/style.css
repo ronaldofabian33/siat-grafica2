@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #d45d79;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    border: 2px solid #d45d79;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #6ca0b2; /* Color azul suave */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a8a99; /* Color más oscuro al pasar el ratón */
+}
+
+table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.data th, table.data td {
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    text-align: left;
+}
+
+table.data th {
+    background-color: #f1c3d2;
+    color: #333;
+}
+
+table.data tr:nth-child(even) {
+    background-color: #f9e5e9;
+}
+
+table.data tr:hover {
+    background-color: #f4c3d5;
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center; /* Centra la gráfica */
+    margin-top: 20px; /* Añade margen superior */
+}
